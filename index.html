@@ -1,23 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Formulário de Cadastro</title>
-    <style>
-    body{font-family:arial,sans-serif;}
-     container{Max-widt:400px;margin:auto;}
-     user-list{margin-top:20px;}
-   </style>
-
+        <style>
+            body{font-family:arial,sans-serif;}
+            container{Max-widt:400px;margin:auto;}
+            user-list{margin-top:20px;}
+        </style>
 </head>
 <body> 
-    <div class="container">
-    <hl> Cadastro de Usuário,</hl>
-    <form id="userform">
-    <label for="nome">Nome:</label>
-    <imput type="text" id="nome"required>
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" 
+<div class="container">
+        <hl> Cadastro de Usuário,</hl>
+        <form id="userform">
+     
+        <label for="nome">Nome:</label>
+        <imput type="text" id="nome"required>
+      <br>
+        <label for="email">Email:</label>
+        <input type="email" id "email" required>
+      <br>
+        <button type="submit"> Cadastrar </button> 
+        </form>
+    <div class="user-list" id="userlist">
+        <h2> usuários cadastrados </h2>
+        <ul id="user ul"></ul>
+    </div>
+</div>
+
+<script>
+    document getElent ById('userForm').add
+    evenListener('submit', function (e) {
+        e.preventDefault(); //evita o envio padrão do formulário
+
+
+    //obtendo os valores dos campos
+    const nome= document.getElementByID('nome').value;
+    
+    const email= document.getElementByID('email').value;
+
+    "criando um objeto para o usuário"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
