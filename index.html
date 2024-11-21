@@ -40,26 +40,46 @@
     
     const email= document.getElementByID('email').value;
 
-    "criando um objeto para o usuário"
+    //criando um objeto para o usuário
+    const usuario = {nome, email};
+
+    //obtendo a lista de usuários do local storage
+    let usuarios Isonparse (localStorage.getItem('usuarios'){
+
+    //adicionando o não usuário
+    usuarios.push(usuario);
+    
+    //armazenamento a lista atualizada no local storage
+    localStorage.setItem('usuarios')tson.stringify('usuarios');
+
+    //adicionando novo usuário
+    usuarios push(usuario);
+    
+    //armazenamento a lista atualizada no localStorage
+    localStorage.setItem('usuarios', Ison.stringify (usuarios);
+
+    //limpar os campos do formulário
+    document.getElentById('userform').reset();
+
+    //atualizar a lista exibida
+
+    exibirUsuarios();
+});
+    Function exibirusuarios(){
+    Const usuarios =
+Ison.passe{local storage.get item ('usuarios'')//[];
+    
+    Const user UL = document.getElementByID('rejhfvbrvsdrjfbv');
+'userful.innerHTML = "; //limpa a lista
+
+    usuarios. fort each((usuario.index) => {
+        const li= document.create Element ("li");   
+    li text content = $ (usuarios.nome)-${usuario.email}; 
+    userful.appendchid(li);
+});
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        //exibir usuarios ao carregar a pagina
+            window.onloud = Exibir usuarios;
+        </script>
 </body>
 </html>
